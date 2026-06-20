@@ -73,6 +73,7 @@ export default function Page() {
 
   return (
     <div className="app">
+      <BrandHeader onHome={() => setScreen("lobby")} />
       {screen === "lobby" && <Lobby onEnter={handleEnterCreate} />}
       {screen === "create" && (
         <CreateCharacter roomCode={roomCode} onStart={handleStartGame} />
@@ -90,6 +91,18 @@ export default function Page() {
         />
       )}
     </div>
+  );
+}
+
+/* --------------------- Brand header --------------------- */
+function BrandHeader({ onHome }: { onHome: () => void }) {
+  return (
+    <button className="brandbar" onClick={onHome} aria-label="홈으로 이동" title="홈으로">
+      <span className="brandbar-crown" aria-hidden="true">
+        ♛
+      </span>
+      <span className="brandbar-word">잿빛 왕관</span>
+    </button>
   );
 }
 

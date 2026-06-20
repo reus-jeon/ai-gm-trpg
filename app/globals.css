@@ -39,6 +39,47 @@ body {
   text-shadow: 0 0 18px rgba(201, 162, 39, 0.25);
 }
 
+/* ---------- Brand header (홈 버튼) ---------- */
+.brandbar {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: auto;
+  padding: 6px 12px 6px 8px;
+  margin: 0 0 10px -8px;
+  border-radius: 999px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.brandbar:hover {
+  background: rgba(201, 162, 39, 0.08);
+  border-color: var(--edge-soft);
+}
+
+.brandbar:focus-visible {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
+}
+
+.brandbar-crown {
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--gold);
+  filter: drop-shadow(0 0 8px rgba(201, 162, 39, 0.4));
+}
+
+.brandbar-word {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  color: var(--gold-soft);
+}
+
 .app {
   max-width: 860px;
   margin: 0 auto;

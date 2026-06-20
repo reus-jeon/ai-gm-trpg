@@ -2,7 +2,7 @@
   "version": 1,
   "course": "semiclass-brand-website-vibecoding",
   "createdAt": "2026-06-20T07:41:29.098Z",
-  "updatedAt": "2026-06-20T08:11:39.301Z",
+  "updatedAt": "2026-06-20T08:38:28.161Z",
   "publicUrl": null,
   "stages": [
     {
@@ -27,25 +27,25 @@
       "id": "content",
       "status": "doing",
       "note": "카피와 반응형 확인 필요",
-      "updatedAt": "2026-06-20T07:58:35.164Z"
+      "updatedAt": "2026-06-20T08:38:28.160Z"
     },
     {
       "id": "git",
-      "status": "todo",
-      "note": "",
-      "updatedAt": null
+      "status": "done",
+      "note": "git init + 첫 커밋(33파일) · 이후 자동 커밋 Stop 훅 설정",
+      "updatedAt": "2026-06-20T08:31:40.727Z"
     },
     {
       "id": "github",
-      "status": "todo",
-      "note": "",
-      "updatedAt": null
+      "status": "done",
+      "note": "GitHub public repo 연결 + push 완료: github.com/reus-jeon/ai-gm-trpg",
+      "updatedAt": "2026-06-20T08:38:27.995Z"
     },
     {
       "id": "vercel",
-      "status": "todo",
-      "note": "",
-      "updatedAt": null
+      "status": "doing",
+      "note": "Vercel import 필요",
+      "updatedAt": "2026-06-20T08:38:28.161Z"
     },
     {
       "id": "qa",
@@ -70,6 +70,7 @@
       ".agents",
       ".claude",
       ".env.local.example",
+      ".git",
       ".gitignore",
       ".next",
       ".semiclass",
@@ -84,10 +85,10 @@
       "package.json",
       "tsconfig.json"
     ],
-    "gitDir": false,
-    "gitCommit": false,
-    "gitRemote": null,
-    "githubRemote": false,
+    "gitDir": true,
+    "gitCommit": true,
+    "gitRemote": "https://github.com/reus-jeon/ai-gm-trpg.git",
+    "githubRemote": true,
     "vercelProject": false,
     "publicUrl": null
   }
